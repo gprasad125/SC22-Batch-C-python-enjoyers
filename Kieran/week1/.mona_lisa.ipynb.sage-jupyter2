@@ -1,0 +1,7 @@
+{"backend_state":"ready","connection_file":"/projects/200e8042-15d9-45b5-b665-c79cbc8761e9/.local/share/jupyter/runtime/kernel-49e69494-a8aa-4ebe-a5b2-7ede21f48239.json","kernel":"ds_env","kernel_error":"Kernel last terminated by signal SIGKILL.","kernel_state":"busy","kernel_usage":{"cpu":0,"memory":0},"metadata":{"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.8.13"}},"trust":true,"type":"settings"}
+{"cell_type":"code","end":1658341456843,"exec_count":1,"id":"96e731","input":"import pandas as pd","kernel":"ds_env","pos":0,"start":1658341455958,"state":"done","type":"cell"}
+{"cell_type":"code","exec_count":0,"id":"baae5b","input":"","pos":3,"state":"done","type":"cell"}
+{"cell_type":"code","exec_count":2,"id":"ef91b3","input":"ml_df = pd.read_csv(\"mona_lisa.csv\")","kernel":"ds_env","pos":1,"start":1658341457750,"state":"done","type":"cell"}
+{"cell_type":"code","id":"41b749","input":"ml_df.head()","kernel":"ds_env","pos":2,"state":"done","type":"cell"}
+{"id":0,"time":1658341302465,"type":"user"}
+{"last_load":1658341194695,"type":"file"}

@@ -1,0 +1,25 @@
+Project Topics
+- Medicine
+    - Heart Disease
+    - Diabetes
+    - Cancer 
+
+
+Data Sources (Kaggle, data.world, etc.)
+- Kaggle
+- https://www.kaggle.com/datasets/nypd/vehicle-collisions (NYPD, 2015-present, Vehicle Collision info)
+- https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri [Classify Brain Tumors]
+- https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020?select=results.csv (F1 Championship 1950-2022) [Predictions for who will win at a certain track]
+- https://www.kaggle.com/datasets/mirichoi0218/insurance (Predicting medical costs of patients)
+- https://www.kaggle.com/datasets/mathchi/diabetes-data-set (Does the patient have diabetes or not)
+- https://www.kaggle.com/datasets/mysarahmadbhat/lung-cancer
+- https://www.kaggle.com/datasets/kaushil268/disease-prediction-using-machine-learning [Does not require processing, and already split intro training / testing]
+
+Guidelines:
+- Look for CSVs
+- Think about "Is there some column / feature we can predict?"
+- Does this fulfill a personal interest of the group?
+- Small datasets are often poor for modeling, so pick something with 1,500+ rows
+
+Really popular topics:
+--> Heart disease, Airplane prediction (ticket prices, delays), Housing / cars price prediction
