@@ -101,5 +101,5 @@
 {"cell_type":"markdown","id":"f18aa4","input":"Next, we'll take a look at while loops. In general, you can make a while loop do anything that a for loop can do but with slightly different syntax, so if you find youself understanding while loops better than for loops, you can just focus on using while loops. ","pos":39,"type":"cell"}
 {"cell_type":"markdown","id":"fe62af","input":"Create a few string variables here, then try to add them together, subtract them, multiply them and divide them to see what happens. You may get an error, and thats okay. Its important to know what can and can't be done with a type of data.","pos":15,"type":"cell"}
 {"cell_type":"markdown","id":"ff932c","input":"Finnally, functions can have a \"return\" statement. This is what the function sends back to the place it was called. You can think of functions like black boxes where the parameters in the parentheses are the input and the return statement is the output. This output can be saved to a variable to be used later. We will redefine the add_numbers function from above using a return statement to show this off.","pos":63,"type":"cell"}
-{"id":0,"time":1658165228205,"type":"user"}
-{"last_load":1658412779451,"type":"file"}
+{"id":0,"time":1658501917479,"type":"user"}
+{"last_load":1658501917351,"type":"file"}
