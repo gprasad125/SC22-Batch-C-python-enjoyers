@@ -66,4 +66,4 @@
 {"cell_type":"markdown","id":"f27f5f","input":"And there you have it. We have a K Nearest Neighbors model that will look at the 7 nearest neighbors, and gave it a nice nickname, my_KNN_model. <br> <br>\n\n**Fitting (Training) the model object:** **Supervised machine learning** training involves learning from past results (`y_train`) and past inputs (`x_train`). We pass these to our model for learning to teach our model to answer the question \"*based on these inputs, what outputs can we expect?*\"\n<br>\n\nTo do this, we want to let this model learn from our data. We do so by running our model object's `.fit()` function on our training data.","metadata":{"id":"IzQ8yZj5Q0Eg"},"pos":41,"type":"cell"}
 {"cell_type":"markdown","id":"fb0db1","input":"**TODO:** Can you figure out how many rows are malignant (M) and how many are benign (B)? ","metadata":{"id":"Q8MwFiBX0Zdu"},"pos":9,"type":"cell"}
 {"id":0,"time":1658501118012,"type":"user"}
-{"last_load":1658508684148,"type":"file"}
+{"last_load":1658759346996,"type":"file"}
