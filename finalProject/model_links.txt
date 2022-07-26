@@ -1,0 +1,6 @@
+Kieran: https://docs.google.com/document/d/1OcOloZbeG7favmlMvfXrRE-ZVdt69ySzFF7HeWDRipQ/edit?usp=sharing
+Eric: https://www.mygreatlearning.com/blog/what-is-ridge-regression/
+      https://towardsdatascience.com/support-vector-machine-introduction-to-machine-learning-algorithms-934a444fca47
+      https://www.analyticsvidhya.com/blog/2020/03/support-vector-regression-tutorial-for-machine-learning/
+      https://towardsdatascience.com/stochastic-gradient-descent-clearly-explained-53d239905d31
+- models linked in doc
