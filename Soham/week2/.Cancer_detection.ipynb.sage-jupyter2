@@ -65,5 +65,5 @@
 {"cell_type":"markdown","id":"e51e3b","input":"**The last step!!** We need to change parameters and data to improve our model as we go. If we can make even 1 more correct cancer prediction, it is worth it, right? \n\n**TODO:** Go back and change the value of `k` in the **creating your model object** section and re-run all the code below it. See what changes with your MSE and confusion matrix!","metadata":{"id":"tbo3cueVq7EV"},"pos":52,"type":"cell"}
 {"cell_type":"markdown","id":"f27f5f","input":"And there you have it. We have a K Nearest Neighbors model that will look at the 7 nearest neighbors, and gave it a nice nickname, my_KNN_model. <br> <br>\n\n**Fitting (Training) the model object:** **Supervised machine learning** training involves learning from past results (`y_train`) and past inputs (`x_train`). We pass these to our model for learning to teach our model to answer the question \"*based on these inputs, what outputs can we expect?*\"\n<br>\n\nTo do this, we want to let this model learn from our data. We do so by running our model object's `.fit()` function on our training data.","metadata":{"id":"IzQ8yZj5Q0Eg"},"pos":41,"type":"cell"}
 {"cell_type":"markdown","id":"fb0db1","input":"**TODO:** Can you figure out how many rows are malignant (M) and how many are benign (B)? ","metadata":{"id":"Q8MwFiBX0Zdu"},"pos":9,"type":"cell"}
-{"id":0,"time":1658855192033,"type":"user"}
-{"last_load":1658855191799,"type":"file"}
+{"id":0,"time":1658936169897,"type":"user"}
+{"last_load":1658942360113,"type":"file"}

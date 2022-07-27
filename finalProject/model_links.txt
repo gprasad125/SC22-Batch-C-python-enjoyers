@@ -4,3 +4,9 @@ Eric: https://www.mygreatlearning.com/blog/what-is-ridge-regression/
       https://www.analyticsvidhya.com/blog/2020/03/support-vector-regression-tutorial-for-machine-learning/
       https://towardsdatascience.com/stochastic-gradient-descent-clearly-explained-53d239905d31
 - models linked in doc
+
+
+Supervised Learning Models: 
+https://scikit-learn.org/stable/supervised_learning.html
+
+SVRs, Decision Tree Regression, SGD, Ridge / Lasso Regression
