@@ -23,5 +23,5 @@
 {"cell_type":"code","exec_count":85,"id":"4a7a29","input":"y_hat = linr.predict(x_test)","pos":13,"type":"cell"}
 {"cell_type":"code","exec_count":86,"id":"9676d8","input":"linr.score(x_test, y_test)\n\n# score()\n\n#1. Takes x_test & makes y_hat\n#2. Takes new y_hat and calculates R-2 Coefficient w/ y_test\n\n","output":{"0":{"data":{"text/plain":"0.777505964407186"},"exec_count":86,"output_type":"execute_result"}},"pos":15,"type":"cell"}
 {"cell_type":"code","exec_count":9,"id":"ec3ec4","input":"input_columns = insurance_cleaned.loc[:, insurance_cleaned.columns != \"charges\"]","pos":9,"type":"cell"}
-{"id":0,"time":1659018764002,"type":"user"}
-{"last_load":1659030623597,"type":"file"}
+{"id":0,"time":1659104606866,"type":"user"}
+{"last_load":1659104604349,"type":"file"}
