@@ -40,5 +40,5 @@
 {"cell_type":"markdown","id":"cd08f7","input":"# Repeat the process!\n\nTry running linear regression on multiple combinations of features (columns) on your dataset. What combination yields the best score? How does this connect to your correlation chart? \n\n","metadata":{"id":"2OixzlOot-U6"},"pos":26,"type":"cell"}
 {"cell_type":"markdown","id":"fc6c9e","input":"pandas docs - https://pandas.pydata.org/docs/reference/index.html#api <br>\nseaborn docs - https://seaborn.pydata.org/api.html","pos":5,"type":"cell"}
 {"cell_type":"markdown","id":"fee221","input":"# Linear regression using SKLearn on your own Data!\n\nThis should look familiar... we now are going to use linear regression on some of our own features. I recommend walking through the code below first, then importing your dataset and working through the same problem with your data!\n\n","metadata":{"id":"K_X2fB9ta-rv"},"pos":0,"type":"cell"}
-{"id":0,"time":1658934523417,"type":"user"}
-{"last_load":1658934523331,"type":"file"}
+{"id":0,"time":1659018788379,"type":"user"}
+{"last_load":1659018788307,"type":"file"}
