@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <style>
+    @keyframes move {
+      0% {left: 0px;}
+      50% {left: 620px;}
+      100% {left: 0px;}
+    }
+  
+    h1 {
+      width: 75px;
+      border: 1px solid black;
+      position: relative;
+      animation-name: move;
+      animation-duration: 4s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello</h1>
+  
+  <canvas id="display"></canvas>
+  <script>
+    const display = document.getElementById('display');
+    display.width = 695;
+    display.height = 450;
+    const world = display.getContext('2d');
+    
+    const robert = new Image();
+    robert.src = 'robert.jpeg';
+    
+    const box = {
+      x: 10,
+      y: 10,
+      x_vel: 2,
+      y_vel: 3,
+      width: 120,
+      height: 120,
+      draw() {
+        world.drawImage(robert, this.x, this.y, this.width, this.height);
+      },
+      update() {
+        this.draw()
+
+        if(this.x + this.width > display.width) {
+          this.x_vel = (Math.floor(Math.random() * 10) + 1)
+          this.x_vel = -this.x_vel;
+        }
+        if(this.x < 0) {
+          this.x_vel = -(Math.floor(Math.random() * 10) + 1)
+          this.x_vel = -this.x_vel;
+        }
+        if(this.y + this.height > display.height) {
+          this.y_vel = (Math.floor(Math.random() * 10) + 1)
+          this.y_vel = -this.y_vel;
+        }
+        if(this.y < 0) {
+          this.x_vel = -(Math.floor(Math.random() * 10) + 1)
+          this.y_vel = -this.y_vel;
+        }
+
+        this.x += this.x_vel
+        this.y += this.y_vel
+      }
+    }
+
+    function update() {
+      requestAnimationFrame(update);
+
+      world.clearRect(0, 0, display.width, display.height);
+      box.update();
+    }
+    update()
+  </script>
+</body>
+</html>

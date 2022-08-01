@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <canvas id="display"></canvas>
+  <script>
+    const display = document.getElementById('display')
+    display.width = 650
+    display.height = 530
+    display.style.border = '1px solid black'
+    const world = display.getContext('2d')
+
+    let keys = []
+    window.addEventListener('keydown', evt => {
+      keys[evt.key] = true
+    })
+    window.addEventListener('keyup', evt => {
+      keys[evt.key] = false
+    })
+
+    let p1 = {
+      x: 10,
+      y: 10,
+      width: 20,
+      height: 20,
+      speed: 2,
+      draw() {
+        world.fillStyle = 'blue'
+        world.fillRect(this.x, this.y, this.width, this.height)
+      },
+      update() {
+        this.draw()
+
+        if(keys['w']) {
+          this.y -= this.speed
+        }
+        if(keys['a']) {
+          this.x -= this.speed
+        }
+        if(keys['s']) {
+          this.y += this.speed
+        }
+        if(keys['d']) {
+          this.x += this.speed
+        }
+      }
+    }
+
+    let p2 = {
+      x: 50,
+      y: 10,
+      width: 20,
+      height: 20,
+      speed: 2,
+      draw() {
+        world.fillStyle = 'red'
+        world.fillRect(this.x, this.y, this.width, this.height)
+      },
+      update() {
+        this.draw()
+
+        if(keys['t']) {
+          this.y -= this.speed
+        }
+        if(keys['f']) {
+          this.x -= this.speed
+        }
+        if(keys['g']) {
+          this.y += this.speed
+        }
+        if(keys['h']) {
+          this.x += this.speed
+        }
+      }
+    }
+
+    function update() {
+      requestAnimationFrame(update)
+      world.clearRect(0, 0, display.width, display.height)
+
+      p1.update()
+      p2.update()
+    }
+    update()
+  </script>
+</body>
+</html>
