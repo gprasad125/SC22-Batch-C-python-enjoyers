@@ -18,5 +18,5 @@
 {"cell_type":"code","exec_count":7,"id":"943aad","input":"target = insurance[\"charges\"]\ninput_columns = insurance.loc[:, insurance.columns != \"charges\"]","pos":7,"type":"cell"}
 {"cell_type":"markdown","id":"cb02bf","input":"## String to Binary\n\n","pos":4,"type":"cell"}
 {"cell_type":"markdown","id":"cd1f4f","input":"## Data Cleaning\n\n","pos":2,"type":"cell"}
-{"id":0,"time":1659369260262,"type":"user"}
-{"last_load":1659369203493,"type":"file"}
+{"id":0,"time":1659465536217,"type":"user"}
+{"last_load":1659455459919,"type":"file"}
