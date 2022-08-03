@@ -55,5 +55,5 @@
 {"cell_type":"code","exec_count":9,"id":"e04e6c","input":"px.scatter(insurance, x=\"age\", y=\"charges\", color=\"region\")","output":{"0":{"data":{"iframe":"f246adc811d1c5dde1479f417ef0c2facaf2b3b8"},"exec_count":9,"output_type":"execute_result"}},"pos":28,"type":"cell"}
 {"cell_type":"markdown","id":"53e5a5","input":"## `Import Statements`\n\n","pos":0,"type":"cell"}
 {"cell_type":"markdown","id":"fa7b80","input":"# Linear Regression Plots\n\n","pos":5,"type":"cell"}
-{"id":0,"time":1659461263081,"type":"user"}
-{"last_load":1659454931536,"type":"file"}
+{"id":0,"time":1659537486703,"type":"user"}
+{"last_load":1659537486338,"type":"file"}

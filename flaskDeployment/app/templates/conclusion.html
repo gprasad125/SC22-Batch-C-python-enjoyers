@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Modern Business - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static', filename = 'css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html">Predicting Health Insurance Costs</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href='/'>Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="edalink">EDA</a></li>
+                            <li class="nav-item"><a class="nav-link" href="modellink">Modeling</a></li>
+                          <li class="nav-item"><a class="nav-link" href="conclusionlink">Conclusions</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about_uslink">About Us</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Header-->
+            <section class="py-5">
+                <div class="container px-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-xxl-6">
+                            <div class="text-center my-5">
+                                <h1 class="fw-bolder mb-3">Results</h1>
+                              <br>
+                  <table class="table table-bordered" style="padding:10px; margin-left: auto;
+  margin-right: auto;">
+                  <thead>
+                    <tr>
+                      <th scope="col">Model</th>
+                      <th scope="col">Decision Tree Regression</th>
+                      <th scope="col">Multilayer Perceptron</th>
+                      <th scope="col">Polynomial Regression</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Correlation (R<sup>2</sup>)</th>
+                      <td>0.811</td>
+                      <td>0.587</td>
+                      <td>0.877</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Root Mean Square Error (RMSE)</th>
+                      <td>5127</td>
+                      <td>8834</td>
+                      <td>4750</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Mean Absolute Error (MAE)</th>
+                      <td>3314</td>
+                      <td>6055</td>
+                      <td>3010</td>
+                    </tr>
+                  </tbody>
+              </table>
+                                <p class="lead fw-normal text-muted mb-4"> After optimizing and training our models, we assessed their performance in predicting test values of our dataset. The score comparison reveals Decision Tree Regression and Polynomial Regression as the most accurate models, with Polynomial Regression slightly outperforming DTR.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+         <section class="py-5 bg-light">
+           <div class="text-center my-5">
+           <h1 class="fw-bolder mb-3">Why we chose this topic</h1>
+             <p class="lead fw-normal text-muted mb-4">
+               We chose this topic because healthcare is one of the top worries for Americans, as many do not have access to insurance. Our tool can serve as an aide for people to see what their insurance costs could be, and help them plan to manage these costs. 
+             </p>
+           </div>
+          </section>
+         <section class="py-5">
+           <div class="text-center my-5">
+           <h1 class="fw-bolder mb-3">Further Extensions</h1>
+             <p class="lead fw-normal text-muted mb-4">
+               If we had more time, we would try to incorporate more variables into our model, such as taking preexisting conditions into account. This could be achieved by acquiring a more complete datasets, such as directly from insurance companies. 
+             </p>
+           </div>
+          </section>
+            
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy Python Enjoyers</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="https://www.ai-camp.org/">AICamp</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

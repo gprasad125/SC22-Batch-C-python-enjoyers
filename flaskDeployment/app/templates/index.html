@@ -10,8 +10,8 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)--><pre></pre>
+        <link href="{{ url_for('static', filename = 'css/styles.css') }}" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -22,30 +22,15 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="eda.html">EDA</a></li>
-                            <li class="nav-item"><a class="nav-link" href="modelling.html">Modeling</a></li>
-                            <li class="nav-item"><a class="nav-link" href="conclusion.html">Conclusions</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href='/'>Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="edalink">EDA</a></li>
+                            <li class="nav-item"><a class="nav-link" href="modellink">Modeling</a></li>
+                            <li class="nav-item"><a class="nav-link" href="conclusionlink">Conclusions</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about_uslink">About Us</a></li>
                             <li class="nav-item dropdown">
-                              <!--
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                    <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
-                                    <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                    <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
-                                </ul>
-                            </li>
                         </ul>
                     </div>
                 </div>
--->
             </nav>
             <!-- Header-->
             <header class="bg-dark py-5">
@@ -62,7 +47,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img src="img/health-medical-insurance-illustration-concept-isolated-people-patients-doctors_109722-583 (1).jpeg" width="105%", height="120%"/></div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img src="{{ url_for('static', filename = 'img/health-medical-insurance-illustration-concept-isolated-people-patients-doctors_109722-583 (1).jpeg')}}" width="105%", height="120%"/></div>
                     </div>
                 </div>
             </header>
@@ -165,65 +150,7 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-
-
-
-
-
-<!--
-
-
-
-
-
-
-
-                                                                                                               _dP                 9m_
-                                                                                                             _#P                     9#_
-                                                                                                            d#@                       9#m
-                                                                                                           d##                         ###
-                                                                                                          J###                         ###L
-                                                                                                          {###K                       J###K
-                                                                                                          ]####K      ___aaa___      J####F
-                                                                                                      __gmM######_  w#P""   ""9#m  _d#####Mmw__
-                                                                                                   _g##############mZ_         __g##############m_
-                                                                                                 _d####M@PPPP@@M#######Mmp gm#########@@PPP9@M####m_
-                                                                                                a###""          ,Z"#####@" '######"\g          ""M##m
-                                                                                               J#@"             0L  "*##     ##@"  J#              *#K
-                                                                                               #"               `#    "_gmwgm_~    dF               `#_
-                                                                                              7F                 "#_   ]#####F   _dK                 JE
-                                                                                              ]                    *m__ ##### __g@"                   F
-                                                                                                                     "PJ#####LP"
-                                                                                               `                       0######
-                                                                                                                     _0#######0
-                                                                                                   .               _d#####^#####m__              ,
-                                                                                                    "*w_________am#####P"   ~9#####mw_________w*"
-                                                                                                        ""9@#####@M""           ""P@#####@M""
-
-
-
-                             ___           ___           ___           ___           ___           ___                     ___           ___            ___         ___           ___           ___           ___           ___
-                            /\  \         |\__\         /\  \         /\__\         /\  \         /\__\                   /\  \         /\__\          /\  \       /\  \         |\__\         /\  \         /\  \         /\  \
-                           /::\  \        |:|  |        \:\  \       /:/  /        /::\  \       /::|  |                 /::\  \       /::|  |         \:\  \     /::\  \        |:|  |       /::\  \       /::\  \       /::\  \
-                          /:/\:\  \       |:|  |         \:\  \     /:/__/        /:/\:\  \     /:|:|  |                /:/\:\  \     /:|:|  |     ___ /::\__\   /:/\:\  \       |:|  |      /:/\:\  \     /:/\:\  \     /:/\ \  \
-                         /::\~\:\  \      |:|__|__       /::\  \   /::\  \ ___   /:/  \:\  \   /:/|:|  |__    _____    /::\~\:\  \   /:/|:|  |__  /\  /:/\/__/  /:/  \:\  \      |:|__|__   /::\~\:\  \   /::\~\:\  \   _\:\~\ \  \
-                        /:/\:\ \:\__\     /::::\__\     /:/\:\__\ /:/\:\  /\__\ /:/__/ \:\__\ /:/ |:| /\__\  /\____\  /:/\:\ \:\__\ /:/ |:| /\__\ \:\/:/  /    /:/__/ \:\__\     /::::\__\ /:/\:\ \:\__\ /:/\:\ \:\__\ /\ \:\ \ \__\
-                        \/__\:\/:/  /    /:/~~/~       /:/  \/__/ \/__\:\/:/  / \:\  \ /:/  / \/__|:|/:/  /  \/____/  \:\~\:\ \/__/ \/__|:|/:/  /  \::/  /     \:\  \ /:/  /    /:/~~/~    \:\~\:\ \/__/ \/_|::\/:/  / \:\ \:\ \/__/
-                             \::/  /    /:/  /        /:/  /           \::/  /   \:\  /:/  /      |:/:/  /             \:\ \:\__\       |:/:/  /    \/__/       \:\  /:/  /    /:/  /       \:\ \:\__\      |:|::/  /   \:\ \:\__\
-                              \/__/     \/__/         \/__/            /:/  /     \:\/:/  /       |::/  /               \:\ \/__/       |::/  /                  \:\/:/  /     \/__/         \:\ \/__/      |:|\/__/     \:\/:/  /
-                                                                      /:/  /       \::/  /        /:/  /                 \:\__\         /:/  /                    \::/  /                     \:\__\        |:|  |        \::/  /
-                                                                      \/__/         \/__/         \/__/                   \/__/         \/__/                      \/__/                       \/__/         \|__|         \/__/
-
-
-
-
-
-
-
--->
-
-  
+        <script src="{{url_for('static', filename = 'js/scripts.js')}}"></script>
   
     </body>
 </html>

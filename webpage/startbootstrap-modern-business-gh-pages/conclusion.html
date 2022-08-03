@@ -35,59 +35,64 @@
                 </div>
             </nav>
             <!-- Header-->
-            <header class="py-5">
+            <section class="py-5">
                 <div class="container px-5">
                     <div class="row justify-content-center">
                         <div class="col-lg-8 col-xxl-6">
                             <div class="text-center my-5">
-                                <h1 class="fw-bolder mb-3">Our goal
-</h1>
-                                <p class="lead fw-normal text-muted mb-4">We want to understand influential factors within American patient’s lives of medical insurance costs and use it create an exploratory data analysis. These graphs helped us along with making our product.</p>
-                                <a class="btn btn-primary btn-lg" href="#scroll-target">See our graphs!</a>
+                                <h1 class="fw-bolder mb-3">Results</h1>
+                              <br>
+                  <table class="table table-bordered" style="padding:10px; margin-left: auto;
+  margin-right: auto;">
+                  <thead>
+                    <tr>
+                      <th scope="col">Model</th>
+                      <th scope="col">Decision Tree Regression</th>
+                      <th scope="col">Multilayer Perceptron</th>
+                      <th scope="col">Polynomial Regression</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Correlation (R<sup>2</sup>)</th>
+                      <td>0.811</td>
+                      <td>0.587</td>
+                      <td>0.877</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Root Mean Square Error (RMSE)</th>
+                      <td>5127</td>
+                      <td>8834</td>
+                      <td>4750</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Mean Absolute Error (MAE)</th>
+                      <td>3314</td>
+                      <td>6055</td>
+                      <td>3010</td>
+                    </tr>
+                  </tbody>
+              </table>
+                                <p class="lead fw-normal text-muted mb-4"> After optimizing and training our models, we assessed their performance in predicting test values of our dataset. The score comparison reveals Decision Tree Regression and Polynomial Regression as the most accurate models, with Polynomial Regression slightly outperforming DTR.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </header>
-            <!-- About section one-->
-            <section class="py-5 bg-light" id="scroll-target">
-                <div class="container px-5 my-5">
-<hr size='1'/>
-
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6"> <iframe src = "img/scatter.html" width = 600 height = 400> </iframe> </div> 
-                        <div class="col-lg-6">
-                            <h2 class="fw-bolder">Scatter Plot Graph</h2>
-                            <p class="lead fw-normal text-muted mb-0">The graph shows that smokers have higher charges than non smokers, and that bmi has a greater effect on the charges of smokers than it does on non smokers.</p>
-                        </div>
-                    </div>
-                </div>
             </section>
-            <!-- About section two-->
-           <section class="py-5">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center">
-                      <div class="col-lg-6 order-first order-lg-last"> <iframe src = "img/pie_1.html" width= 600 height= 400> </iframe> </div>
-                        <div class="col-lg-6 order-first order-lg-last"> <iframe src = "img/pie_2.html" width= 600 height= 400> </iframe> </div>
-                        <div class="col-lg-6">
-                            <h2 class="fw-bolder">Pie Charts</h2>
-                            <p class="lead fw-normal text-muted mb-0">The 1st Chart shows us that the data is distributed among more non smokers than smokers. However, in the 2nd chart, the total charges for both groups are roughly equal because the higher numbers of the non smokers compensate for the higher average charges of the smokers.
-</p>
-</div>
-             </div>
-            </section>
-            <!-- About section three-->
-            <section class="py-5 bg-light" id="scroll-target">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6"> <iframe src = "img/kieran_heatmap.html" width = 600 height = 400></iframe> <iframe src = "img/kaizar_heatmap.html" width = 600 height = 400> </iframe></div>
-                        <div class="col-lg-6">
-                            <h2 class="fw-bolder">Correlation Heatmaps</h2>
-                            <p class="lead fw-normal text-muted mb-0">The upper heatmap represents the string data using One Hot Encoding, whereas the lower heatmap represents string data that was Numerically Encoded </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+         <section class="py-5 bg-light">
+           <div class="text-center my-5">
+           <h1 class="fw-bolder mb-3">Why we chose this topic</h1>
+           </div>
+          </section>
+         <section class="py-5">
+           <div class="text-center my-5">
+           <h1 class="fw-bolder mb-3">Further Extensions</h1>
+             <p class="lead fw-normal text-muted mb-4">
+               If we had more time, we would try to incorporate more variables into our model, such as taking preexisting conditions into account. 
+             </p>
+           </div>
+          </section>
+            
         <!-- Footer-->
         <footer class="bg-dark py-4 mt-auto">
             <div class="container px-5">

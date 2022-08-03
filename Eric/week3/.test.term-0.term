@@ -1,0 +1,16 @@
+(base) ]0;~/python-enjoyers/Eric/week3[01;34m~/python-enjoyers/Eric/week3[00m$ cd phy[K[Kython-ejo[K[Knjoyer[K[K[K[K[K[K[K[K[K[K[K[K[K[K..
+(base) ]0;~/python-enjoyers/Eric[01;34m~/python-enjoyers/Eric[00m$ cd ..
+(base) ]0;~/python-enjoyers[01;34m~/python-enjoyers[00m$ cd ..
+(base) ]0;~[01;34m~[00m$ cd pyho[K[Kthon-ej[Knjoery[K[K[Kyers.[K/flaskDeployment/app
+(base) ]0;~/python-enjoyers/flaskDeployment/app[01;34m~/python-enjoyers/flaskDeployment/app[00m$ [K(base) ]0;~/python-enjoyers/flaskDeployment/app[01;34m~/python-enjoyers/flaskDeployment/app[00m$ python -m main
+Try to open
+
+    https://cocalc8.ai-camp.dev/200e8042-15d9-45b5-b665-c79cbc8761e9/port/12345/
+
+
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Serving Flask app 'main'
+ * Debug mode: on
+Address already in use
+Port 12345 is in use by another program. Either identify and stop that program, or start the server with a different port.
+(base) ]0;~/python-enjoyers/flaskDeployment/app[01;34m~/python-enjoyers/flaskDeployment/app[00m$ 
