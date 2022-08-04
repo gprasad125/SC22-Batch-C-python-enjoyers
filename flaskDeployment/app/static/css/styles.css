@@ -664,6 +664,13 @@ progress {
     max-width: 1320px;
   }
 }
+
+#border{
+    text-align: center;
+    border: 3px solid #000000;
+    padding-left: 100px;
+    padding-right: 100px;
+}
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -1964,7 +1971,6 @@ progress {
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
   --bs-table-hover-color: #212529;
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
-  width: 100%;
   margin-bottom: 1rem;
   color: #212529;
   vertical-align: top;

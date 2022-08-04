@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Modern Business - Start Bootstrap Template</title>
+        <title>Novel Health Insurance Charge Prediction</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)--><pre></pre>
+        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{ url_for('static', filename = 'css/styles.css') }}" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column">
@@ -18,11 +18,11 @@
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html">Predicting Health Insurance Costs</a>
+                    <a class="navbar-brand" href="indexlink">Predicting Health Insurance Costs</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href='/'>Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="indexlink">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="edalink">EDA</a></li>
                             <li class="nav-item"><a class="nav-link" href="modellink">Modeling</a></li>
                             <li class="nav-item"><a class="nav-link" href="conclusionlink">Conclusions</a></li>
@@ -42,7 +42,7 @@
                             <div class="text-center my-5">
                                 <h1 class="fw-bolder mb-3">Our goal
 </h1>
-                                <p class="lead fw-normal text-muted mb-4">We want to understand influential factors within American patient’s lives of medical insurance costs and use it create an exploratory data analysis. These graphs helped us along with making our product.</p>
+                                <p class="lead fw-normal text-muted mb-4">We want to understand influential factors within American patients' lives of medical insurance costs and use them to create an exploratory data analysis. These are some graphs that helped us along with the creation process.</p>
                                 <a class="btn btn-primary btn-lg" href="#scroll-target">See our graphs!</a>
                             </div>
                         </div>
@@ -55,10 +55,10 @@
 <hr size='1'/>
 
                     <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6"> <iframe src = "img/scatter.html" width = 600 height = 400> </iframe> </div> 
+                        <div class="col-lg-6"> <iframe src = "{{ url_for('static', filename = 'img/scatter.html') }}" width = 600 height = 400> </iframe> </div> 
                         <div class="col-lg-6">
                             <h2 class="fw-bolder">Scatter Plot Graph</h2>
-                            <p class="lead fw-normal text-muted mb-0">The graph shows that smokers have higher charges than non smokers, and that bmi has a greater effect on the charges of smokers than it does on non smokers.</p>
+                            <p class="lead fw-normal text-muted mb-0">The graph shows that smokers have higher charges than non smokers, and that BMI has a greater effect on the charges of smokers than it does on non smokers.</p>
                         </div>
                     </div>
                 </div>
@@ -67,11 +67,11 @@
            <section class="py-5">
                 <div class="container px-5 my-5">
                     <div class="row gx-5 align-items-center">
-                      <div class="col-lg-6 order-first order-lg-last"> <iframe src = "img/pie_1.html" width= 600 height= 400> </iframe> </div>
-                        <div class="col-lg-6 order-first order-lg-last"> <iframe src = "img/pie_2.html" width= 600 height= 400> </iframe> </div>
+                      <div class="col-lg-6 order-first order-lg-last"> <iframe src = "{{ url_for('static', filename = 'img/pie_1.html') }}" width= 600 height= 400> </iframe> </div>
+                        <div class="col-lg-6 order-first order-lg-last"> <iframe src = "{{ url_for('static', filename = 'img/pie_2.html') }}" width= 600 height= 400> </iframe> </div>
                         <div class="col-lg-6">
                             <h2 class="fw-bolder">Pie Charts</h2>
-                            <p class="lead fw-normal text-muted mb-0">The 1st Chart shows us that the data is distributed among more non smokers than smokers. However, in the 2nd chart, the total charges for both groups are roughly equal because the higher numbers of the non smokers compensate for the higher average charges of the smokers.
+                            <p class="lead fw-normal text-muted mb-0">The first chart shows us that the data is distributed among more non smokers than smokers. However, in the second chart, the total charges for both groups are roughly equal because the higher numbers of the non smokers compensate for the higher average charges of the smokers.
 </p>
 </div>
              </div>
@@ -80,7 +80,7 @@
             <section class="py-5 bg-light" id="scroll-target">
                 <div class="container px-5 my-5">
                     <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6"> <iframe src = "img/kieran_heatmap.html" width = 600 height = 400></iframe> <iframe src = "img/kaizar_heatmap.html" width = 600 height = 400> </iframe></div>
+                        <div class="col-lg-6"> <iframe src = "{{ url_for('static', filename = 'img/kieran_heatmap.html') }}" width = 600 height = 400></iframe> <iframe src = "{{ url_for('static', filename = 'img/kaizar_heatmap.html') }}" width = 600 height = 400> </iframe></div>
                         <div class="col-lg-6">
                             <h2 class="fw-bolder">Correlation Heatmaps</h2>
                             <p class="lead fw-normal text-muted mb-0">The upper heatmap represents the string data using One Hot Encoding, whereas the lower heatmap represents string data that was Numerically Encoded </p>

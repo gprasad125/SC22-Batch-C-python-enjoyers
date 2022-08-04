@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Python Enjoyer's Health Insurance Cost Predictor</title>
+        <title>Novel Health Insurance Charge Prediction</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -16,7 +16,8 @@
         .our-names {
           user-select: none;
           font-size: 22px;
-          text-align: start;
+          font-weight: bold;
+          transition: 1s ease;
           cursor: default;
         }
         .our-pics {
@@ -32,6 +33,7 @@
         .team-role {
           user-select: none;
           cursor: default;
+          text-align: start;
           opacity: 0%;
           font-style: italic;
           margin-top: 5px;
@@ -59,15 +61,15 @@
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="{{ url_for('static', filename = 'templates/index.html') }}">Predicting Health Insurance Costs</a>
+                    <a class="navbar-brand" href="indexlink">Predicting Health Insurance Costs</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-<li class="nav-item"><a class="nav-link" href='/'>Home</a></li>
+<li class="nav-item"><a class="nav-link" href="indexlink">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="edalink">EDA</a></li>
 <li class="nav-item"><a class="nav-link" href="modellink">Modeling</a></li>
-<li class="nav-item"><a class="nav-link" href="conclusionlink">Conclusion</a></li>
+<li class="nav-item"><a class="nav-link" href="conclusionlink">Conclusions</a></li>
 <li class="nav-item"><a class="nav-link" href="about_uslink">About Us</a></li>
                         </ul>
                     </div>
@@ -86,7 +88,7 @@
 <div class="col-lg-6 col-xl-4">
   <div class="us card mb-5 mb-xl-0">
     <div class="card-body p-5">
-      <div class="our-names text-uppercase fw-bold">Kaizar Rangwala</div>
+      <div class="our-names text-uppercase">Kaizar Rangwala</div>
                                   
       <img id="kaizar-pic" class="our-pics" src="{{ url_for('static', filename = 'img/kaizar.png') }}">
       
@@ -99,7 +101,7 @@
 <div class="col-lg-6 col-xl-4">
   <div class="us card mb-5 mb-xl-0">
     <div class="card-body p-5">
-      <div class="our-names text-uppercase fw-bold">Kieran Llarena</div>        
+      <div class="our-names text-uppercase">Kieran Llarena</div>        
 
       <img id="kieran-pic" class="our-pics" src="{{ url_for('static', filename = 'img/kieran.jpg') }}">
 
@@ -113,7 +115,7 @@
 <div class="col-lg-6 col-xl-4">
   <div class="us card mb-5 mb-xl-0">
     <div class="card-body p-5">
-      <div class="our-names text-uppercase fw-bold">Eric Chen</div>        
+      <div class="our-names text-uppercase">Eric Chen</div>        
 
       <img id="eric-pic" class="our-pics" src="{{ url_for('static', filename = 'img/eric.jpg') }}">
 
@@ -126,7 +128,7 @@
 <div class="col-lg-6 col-xl-4">
   <div class="on-the-bottom us card mb-5 mb-xl-0">
     <div class="card-body p-5">
-      <div class="our-names text-uppercase fw-bold">Soham Lahiri</div>        
+      <div class="our-names text-uppercase">Soham Lahiri</div>        
 
       <img id="soham-pic" class="our-pics" src="{{ url_for('static', filename = 'img/soham.jpg') }}">
 
@@ -139,7 +141,7 @@
 <div class="col-lg-6 col-xl-4">
   <div class="on-the-bottom us card mb-5 mb-xl-0">
     <div class="card-body p-5">
-      <div class="our-names text-uppercase fw-bold">Gokul Prasad</div>        
+      <div class="our-names text-uppercase">Gokul Prasad</div>        
 
       <img id="gokul-pic" class="our-pics" src="{{ url_for('static', filename = 'img/gokul.jpg') }}">
 
@@ -165,6 +167,18 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="{{ url_for('static', filename = 'js/scripts.js') }}"></script>
+        <script>
+          const our_pics = document.getElementsByClassName("our-pics")
+          const our_names = document.getElementsByClassName("our-names")
+          let rotVals = [0, 0, 0, 0, 0]
+          
+          for(let i = 0; i < our_pics.length; i++) {
+            our_pics[i].addEventListener("click", () => {
+              rotVals[i] += 30
+              our_pics[i].style.transform = `rotate(${rotVals[i]}deg)`
+              our_names[i].style.transform = `rotate(${rotVals[i]}deg)`
+            })
+          }  
+        </script>
     </body>
 </html>
