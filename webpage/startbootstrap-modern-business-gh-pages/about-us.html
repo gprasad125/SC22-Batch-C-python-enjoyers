@@ -18,6 +18,7 @@
           font-size: 22px;
           text-align: start;
           cursor: default;
+          transition: 1s ease;
         }
         .our-pics {
           user-select: none;
@@ -50,7 +51,7 @@
         }
         .us:hover .our-pics {
           border-radius: 2px;
-          transform: translateY(-3px)
+          transform: translateY(-3px);
         }
       </style>
     </head>
@@ -166,11 +167,15 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script>
-          const our_pics = document.getElementByClassName("our-pics")
+          const our_pics = document.getElementsByClassName("our-pics")
+          const our_names = document.getElementsByClassName("our-names")
+          let rotVals = [0, 0, 0, 0, 0]
           
-          for(pic of our_pics) {
-            pic.addEventListener("click", () => {
-              pic.style.transform = "rotate(180deg)"
+          for(let i = 0; i < our_pics.length; i++) {
+            our_pics[i].addEventListener("click", () => {
+              rotVals[i] += 30
+              our_pics[i].style.transform = `rotate(${rotVals[i]}deg)`
+              our_names[i].style.transform = `rotate(${rotVals[i]}deg)`
             })
           }
         </script>

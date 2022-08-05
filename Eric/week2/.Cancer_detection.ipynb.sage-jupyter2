@@ -67,5 +67,5 @@
 {"cell_type":"markdown","id":"ef4771","input":"**Prediction and Evaluation:** How do we know if our model is actually good? We need to **test** our model by giving it a two-step quiz. \n\nStep 1: We let our model use our testing inputs (`x_test`) to make predictions that guess the whether the patient has benign or malignant tumors (we call these predictions `y_hat`). In this case our `y_hat`'s are a bunch of 1's and 0's that represent whether our model thinks the patient's tumor is benign or malignant. \n\nWe do this by running our model object's `.predict()` function.","metadata":{"id":"qRJKWrA6hhdf"},"pos":44,"type":"cell"}
 {"cell_type":"markdown","id":"f546f0","input":"Do you remember how to fit a model? What parts of our data do we fit/train on? You can go look at the section above for inspiration.","metadata":{"id":"Bk4rua0er_QF"},"pos":56,"type":"cell"}
 {"cell_type":"markdown","id":"fed63a","input":"Compute your MSE below. Is this higher or lower than KNN? Which one would you recommend so far?","metadata":{"id":"k-ANsXzitBdu"},"pos":60,"type":"cell"}
-{"id":0,"time":1658773472201,"type":"user"}
-{"last_load":1658771602908,"type":"file"}
+{"id":0,"time":1659624680385,"type":"user"}
+{"last_load":1659624680863,"type":"file"}
